@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-image: url('/gpaapp/angry.jpg');                                    -fx-background-size: cover;                                    -fx-background-position: center center;                                    -fx-background-repeat: no-repeat;                                    -fx-background-color: rgba(0,0,0,0);" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gpaapp.ResultController">
+   <center>
+      <VBox alignment="TOP_CENTER" spacing="12" stylesheets="@style.css">
+          <padding>
+              <Insets topRightBottomLeft="20" />
+          </padding>
+      
+          <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="GPA Result" />
+          <TableView fx:id="table" prefHeight="360" prefWidth="700">
+              <columns>
+                  <TableColumn prefWidth="180" text="Course">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="name" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="100" text="Code">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="code" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="80" text="Credit">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="credit" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="160" text="Teacher 1">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="teacher1" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="160" text="Teacher 2">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="teacher2" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="80" text="Grade">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="grade" />
+                      </cellValueFactory>
+                  </TableColumn>
+              </columns>
+          </TableView>
+      
+          <Label fx:id="gpaLabel" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Your GPA: 0.00">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+      </VBox>
+   </center>
+</BorderPane>
