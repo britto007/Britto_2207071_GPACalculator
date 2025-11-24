@@ -10,7 +10,7 @@ public class HomeController {
     @FXML
     void startApp(ActionEvent e) throws Exception {
         Stage stage = (Stage)((javafx.scene.Node)e.getSource()).getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/gpaapp/course_entry.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/gpaapp/course_entry (1).fxml"));
         stage.setScene(new Scene(loader.load()));
         stage.setTitle("GPA Calculator - Courses");
     }
