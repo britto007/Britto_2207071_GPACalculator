@@ -143,14 +143,14 @@ public class CourseEntryController {
         }
 
         try {
-            String name = courseName.getText().trim();
-            String code = courseCode.getText().trim();
-            String creditText = courseCredit.getText().trim();
-            String t1 = teacher1.getText().trim();
-            String t2 = teacher2.getText().trim();
+            String name = courseName.getText();
+            String code = courseCode.getText();
+            String creditText = courseCredit.getText();
+            String t1 = teacher1.getText();
+            String t2 = teacher2.getText();
             String grade = gradeBox.getValue();
-            String roll = studentRoll.getText().trim();
-            String sName = studentName.getText().trim();
+            String roll = studentRoll.getText();
+            String sName = studentName.getText();
 
             if (name.isEmpty() || code.isEmpty() || creditText.isEmpty()
                     || grade == null || roll.isEmpty() || sName.isEmpty()) {
