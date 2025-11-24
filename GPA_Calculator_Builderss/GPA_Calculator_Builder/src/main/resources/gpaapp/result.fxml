@@ -9,7 +9,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane style="-fx-background-image: url('/gpaapp/angry.jpg');                                    -fx-background-size: cover;                                    -fx-background-position: center center;                                    -fx-background-repeat: no-repeat;                                    -fx-background-color: rgba(0,0,0,0);" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gpaapp.ResultController">
+<BorderPane style="-fx-background-image: url('/gpaapp/angry.jpg');
+                                   -fx-background-size: cover;
+                                    -fx-background-position: center center;
+                                     -fx-background-repeat: no-repeat;
+                                     -fx-background-color: rgba(0,0,0,0);" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gpaapp.ResultController">
    <center>
       <VBox alignment="TOP_CENTER" spacing="12" stylesheets="@style.css">
           <padding>
